@@ -7,7 +7,7 @@ def registrar_item(inventario, prestamos):
     codigo = input("Ingrese el código del ítem: ").strip()
 
     for item in inventario:
-        if item["codigo"].lower() == codigo.lower():
+        if item("codigo").lower() == codigo.lower():
             print("Error: ya existe un ítem con ese código.")
             return
 
