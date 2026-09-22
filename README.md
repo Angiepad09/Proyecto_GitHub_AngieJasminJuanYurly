@@ -38,6 +38,8 @@ Permite guardar y cargar la información del sistema utilizando archivos JSON.
 ## 🛠️ Instalación, configuración y repositorio local
 
 Al inicio del proyecto, cada uno instaló Git en su equipo y configuró su identidad mediante los comandos `git config --global user.name` y `git config --global user.email`.
+
+<p align="center"><img src="imagen/list_Angie.png" width="400"></p>
  
 Esta configuración permitió que cada colaborador quedara registrado en el historial del repositorio, identificando al autor de cada commit. Con git config --list se verifico que la informacion tanto de user como el email estuvieran correctamente configuradas
 
