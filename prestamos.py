@@ -1,4 +1,4 @@
-def registrar_prestamo(inventario, prestamo):
+def registrar_prestamo(inventario, prestamos):
     codigo = input("Ingrese el código del ítem: ").strip()
     usuario = input("Ingrese el nombre de usuario: ").strip()
     fecha = input("Ingrese la fecha del préstamo: ").strip()
@@ -19,7 +19,7 @@ def registrar_prestamo(inventario, prestamo):
                 "devuelto": False
             }
 
-            prestamo.append(nuevo_prestamo)
+            prestamos.append(nuevo_prestamo)
 
             print("Préstamo registrado correctamente")
             return
@@ -32,7 +32,7 @@ def registrar_devolucion(inventario, prestamos):
 
     for prestamo in prestamos:
         if (prestamo["codigo_item"].lower() == codigo.lower()
-                and prestamo["usuario"].lower() == usuario.lower):
+                and prestamo["usuario"].lower() == usuario.lower()):
 
             if prestamo["devuelto"]:
                 print("Este préstamo ya fue devuelto")
