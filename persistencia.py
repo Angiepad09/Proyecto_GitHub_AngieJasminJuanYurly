@@ -1,7 +1,7 @@
 import json
 import os
 
-ARCHIVO_DATOS = "datos.json"
+ARCHIVO_DATOS = "inventario.json"
 
 def cargar_datos():
     if not os.path.exists(ARCHIVO_DATOS):

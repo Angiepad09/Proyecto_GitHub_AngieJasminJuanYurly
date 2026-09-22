@@ -23,10 +23,10 @@ while True:
             buscar_item(inventario)
 
         elif opcion == "4":
-           pass
+           registrar_prestamo(inventario, prestamos)
 
         elif opcion == "5":
-            pass
+            registrar_devolucion(inventario, prestamos)
 
         elif opcion == "6":
             print("\nGracias por utilizar BiblioStock.")
