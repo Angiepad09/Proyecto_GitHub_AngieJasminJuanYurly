@@ -9,3 +9,19 @@ def registrar_prestamo(inventario, prestamo):
             if item["cantidad_disponible"] <= 0:
                 print("No hay unidades disponibles de este item")
                 return
+
+            item["cantidad_disponible"] -= 1
+
+            prestamo = {
+                "codigo_item": item["codigo"],
+                "usuario": usuario,
+                "fecha": fecha,
+                "devuelto": False
+            }
+
+            prestamos.append(prestamo)
+
+            print("Prestamo registrado correctamente")
+            return
+
+        print("No se encontró el item con ese código.")
