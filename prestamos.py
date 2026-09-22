@@ -1,7 +1,7 @@
 def registrar_prestamo(inventario, prestamo):
     codigo = input("Ingrese el código del ítem: ").strip()
     usuario = input("Ingrese el nombre de usuario: ").strip()
-    fecha = input("Ingrese la fecha del prestamo: ").strip()
+    fecha = input("Ingrese la fecha del préstamo: ").strip()
 
     for item in inventario:
         if item["codigo"].lower() == codigo.lower():
@@ -21,7 +21,7 @@ def registrar_prestamo(inventario, prestamo):
 
             prestamo.append(nuevo_prestamo)
 
-            print("Prestamo registrado correctamente")
+            print("Préstamo registrado correctamente")
             return
 
     print("No se encontró el item con ese código.")
