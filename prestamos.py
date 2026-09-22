@@ -25,3 +25,9 @@ def registrar_prestamo(inventario, prestamo):
             return
 
         print("No se encontró el item con ese código.")
+
+def registrar_devolucion(inventario, prestamos):
+    codigo = input("Ingrese el código del Item: ").strip()
+    usuario = input("Ingrese su nombre de usuario: ").strip()
+
+    
