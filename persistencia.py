@@ -18,6 +18,7 @@ def cargar_datos():
 
     except (json.JSONDecodeError, FileNotFoundError):
         return [], []
+    
 def guardar_datos(inventario, prestamos):
     datos = {
         "inventario": inventario,
